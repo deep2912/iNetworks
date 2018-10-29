@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+div {
+    max-width: 2000px;
+    height: 80px;
+    background-color: #000000;
+    color:#ffffff;
+	
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #618685;
+}
+
+input[type=reset] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #009688;
+}
+.container {
+    border-radius: 5px;
+    background-color: #b3b3b3;
+    padding: 20px;
+    width:400px;
+height:600px;
+}
+
+.cont {
+
+float:left;
+
+}
+</style>
+
+  </form>
+</head>
+<body>
+<center>
+
+<div>
+<h1>FeedBack Form </h1>
+</div>
+<br><br><br>
+<div class="container" >
+  <form name="myForm">
+    <label class="cont" for="fname" style="color:#000000">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+   <label class="cont" for="fname" style="color:#000000">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  	<label class="cont"  for="fname" style="color:#000000">Email-ID</label>
+	<input type="text" id="email" name="email" placeholder="enter your email...">
+
+ 
+   <label class="cont"  for="fname" style="color:#000000">Suggestions :</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   <label class="cont" for="fname" style="color:#000000">How would you like to rate us :</label><br><br><br>
+ <input type="radio" name="rate" value="Excellent"> <label style="color:#000000">Excellent</lable>
+  <input type="radio" name="rate" value="average"> <label style="color:#000000">Average</lable>
+  <input type="radio" name="rate" value="poor"> <label style="color:#000000">Poor</lable><br><br>
+    <input type="submit" value="Submit" onclick="func()">  <input type="reset" value="Reset">
+<script>
+function func() {
+    
+        
+    alert("submitted successfully!");
+}
+</script>
+</div>
+</center>
+</body>
+</html>
